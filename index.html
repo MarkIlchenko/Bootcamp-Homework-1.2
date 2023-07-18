@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,51 +19,128 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
     <!--    Подключаю свой файл со стилями-->
     <link rel="stylesheet" href="main.css">
-    <base href="https://markilchenko.github.io/Bootcamp-Homework-1.2/" target="_blank">
+<!--    <base href="https://markilchenko.github.io/Bootcamp-Homework-1.2/" target="_blank">-->
 </head>
 <body>
-<header class="nav-bar-container container">
-    <a href="#" class="logo-container center-element">
-        <img src="img/Logo.svg" alt="Logo" class="logo">
-    </a>
 
-    <nav class="nav-bar">
-
-        <img src="img/bugger.svg" alt="icon" id="Burger_menu" class="close2">
-
-        <ul class="links-container unvisible">
-
-            <li class="links-list">
-                <a href="#" class="link">Gameplay</a>
-            </li>
-            <li class="links-list">
-                <a href="#" class="link">Roadmap</a>
-            </li>
-            <li class="links-list">
-                <a href="#" class="link">Features & benefits</a>
-            </li>
-            <li class="links-list">
-                <a href="#" class="link">Marketplace</a>
-            </li>
-        </ul>
-
+<header class="nav-container">
+    <nav class="nav-bar-container">
+        <a href="#">
+            <img src="img/Logo.svg" alt="Logo" class="Logo">
+        </a>
+        <div>
+            <a href="#" class="Shopping-Cart-Container">
+                <img src="img/Shopping-Cart.svg" alt="Shopping Cart" class="basket-icon">
+                <span class="Shopping-Cart-text">
+                    Shopping<br>
+                    Cart
+                </span>
+            </a>
+        </div>
     </nav>
-
-    <a href="#" class="sec-btn">Play now</a>
 </header>
 
-<section>
-    <div class="container first_section">
-        <div class="container-medium">
-            <h1>It was my first bootcamp homework!</h1>
-            <p>
-                Thank you very much Natasha for the lesson! You are a great teacher, I hope you enjoy my first homework, looking forward to tomorrow's lesson!</p>
-        </div>
-        <img src="img/Main-Illustration.svg" alt="Illustration" class="main-illustration">
-    </div>
-</section>
+<main>
+    <section class="container">
+        <h1>We believe a cup of coffee is one of the most important, simple <span class="special-word">pleasures</span> in life</h1>
+        <div class="product-list">
 
-<div class="day">1 Day <span class="other-days">/ 10 Days</span></div>
+            <article class="cart">
+                <div class="img-container">
+                    <img src="img/Cup.png" alt="Product">
+                    <img src="img/Stamp.svg" alt="Stamp" class="Stamp">
+                </div>
+                <div class="name-price-container">
+                    <h2>Extra Latte</h2>
+                    <span class="price">$8.99</span>
+                </div>
+                <div class="options-container">
+                    <div class="option-container">
+                        <input type="radio" name="Late-ML" id="Late-option1" checked>
+                        <label for="Late-option1">250 ml</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="radio" name="Late-ML" id="Late-option2">
+                        <label for="Late-option2">500 ML</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="checkbox" id="Late-myCheckbox">
+                        <label for="Late-myCheckbox">
+                            Add sugar
+                        </label>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="prm-btn">Add to Cart</button>
+                    <img src="img/Info.svg" alt="Info">
+                </div>
+            </article>
+
+            <article class="cart">
+                <img src="img/Cup2.svg" alt="Product">
+                <div class="name-price-container">
+                    <h2>Extra Latte</h2>
+                    <span class="price">$9.99</span>
+                </div>
+                <div class="options-container">
+                    <div class="option-container">
+                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option1" checked>
+                        <label for="Cappuccino-option1">250 ml</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option2">
+                        <label for="Cappuccino-option2">500 ML</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="checkbox" id="Cappuccino-myCheckbox">
+                        <label for="Cappuccino-myCheckbox">
+                            Add sugar
+                        </label>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="prm-btn">Add to Cart</button>
+                    <img src="img/Info.svg" alt="Info">
+                </div>
+            </article>
+
+            <article class="cart">
+                <img src="img/Cup3.svg" alt="Product">
+                <div class="name-price-container">
+                    <h2>Extra Latte</h2>
+                    <span class="price">$7.29</span>
+                </div>
+                <div class="options-container">
+                    <div class="option-container">
+                        <input type="radio" name="EX-Late-ML" id="EX-Late-option1" checked>
+                        <label for="EX-Late-option1">250 ml</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="radio" name="EX-Late-ML" id="EX-Late-option2">
+                        <label for="EX-Late-option2">500 ML</label>
+                    </div>
+
+                    <div class="option-container">
+                        <input type="checkbox" id="EX-Late-myCheckbox">
+                        <label for="EX-Late-myCheckbox">
+                            Add sugar
+                        </label>
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="prm-btn">Add to Cart</button>
+                    <img src="img/Info.svg" alt="Info">
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
 
 
 <script src="main.js"></script>
