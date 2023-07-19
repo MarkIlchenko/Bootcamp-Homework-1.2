@@ -288,3 +288,7 @@ input[type="checkbox"] {
 .logo-text:hover {
     color: #FF7733;
 }
+
+.unvisible {
+    display: none;
+}
