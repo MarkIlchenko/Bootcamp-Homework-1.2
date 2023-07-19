@@ -16,7 +16,7 @@
     <!--    Добовляю шрифт в проект, беру их из Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Inter:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <!--    Подключаю свой файл со стилями-->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="media.css">
@@ -26,16 +26,23 @@
 
 <header class="nav-container">
     <nav class="nav-bar-container">
-        <a href="#">
-            <img src="img/Logo.svg" alt="Logo" class="Logo">
+
+        <a href="#" class="logo-container">
+<!--            Немного переработал Лого, чтобы был hover effect как в прототипе-->
+<!--            <img src="img/Logo.svg" alt="Logo" class="Logo">-->
+            <img src="img/Logo-2.svg" alt="Logo" class="Logo">
+            <div class="logo-text">
+                VELOCE<br>
+                COFFEE SHOP
+            </div>
         </a>
         <div>
             <a href="#" class="Shopping-Cart-Container">
                 <img src="img/Shopping-Cart.svg" alt="Shopping Cart" class="basket-icon">
-                <span class="Shopping-Cart-text">
+                <div class="Shopping-Cart-text">
                     Shopping<br>
                     Cart
-                </span>
+                </div>
             </a>
         </div>
     </nav>
@@ -43,8 +50,8 @@
 
 <main>
     <section class="container">
-        <h1>We believe a cup of coffee is one of the most important, simple <span class="special-word">pleasures</span> in life</h1>
-        <div class="product-list">
+        <h1 class="header-wrapper">We believe a cup of coffee is one of the most important, simple <span class="special-word">pleasures</span> in life</h1>
+        <div class="product-list container-padding ">
 
             <article class="cart">
                 <div class="img-container">
@@ -75,14 +82,14 @@
                 </div>
                 <div class="buttons-container">
                     <button class="prm-btn">Add to Cart</button>
-                    <img src="img/Info.svg" alt="Info">
+                    <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
 
             <article class="cart">
                 <img src="img/Cup2.svg" alt="Product">
                 <div class="name-price-container">
-                    <h2>Extra Latte</h2>
+                    <h2>Cappuccino</h2>
                     <span class="price">$9.99</span>
                 </div>
                 <div class="options-container">
@@ -105,14 +112,14 @@
                 </div>
                 <div class="buttons-container">
                     <button class="prm-btn">Add to Cart</button>
-                    <img src="img/Info.svg" alt="Info">
+                    <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
 
             <article class="cart">
                 <img src="img/Cup3.svg" alt="Product">
                 <div class="name-price-container">
-                    <h2>Extra Latte</h2>
+                    <h2>Moccachino</h2>
                     <span class="price">$7.29</span>
                 </div>
                 <div class="options-container">
@@ -135,11 +142,12 @@
                 </div>
                 <div class="buttons-container">
                     <button class="prm-btn">Add to Cart</button>
-                    <img src="img/Info.svg" alt="Info">
+                    <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
 
         </div>
+
     </section>
 </main>
 

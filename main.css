@@ -19,6 +19,7 @@ body {
 .Shopping-Cart-Container {
     display: flex;
     align-items: center;
+
 }
 
 .Shopping-Cart-text {
@@ -29,7 +30,7 @@ body {
     font-weight: 700;
     line-height: 100%; /* 16px */
     text-transform: uppercase;
-
+    transition: 0.5s;
 }
 
 a {
@@ -119,6 +120,7 @@ h2 {
 
 /* Styling for radio buttons */
 input[type="radio"], input[type="checkbox"] {
+    position: relative;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -132,10 +134,35 @@ input[type="radio"], input[type="checkbox"] {
 
 }
 
-input[type="radio"]:checked, input[type="checkbox"]:checked {
+input[type="radio"]:checked {
     background-color: #FF7733;
     border: 4px solid white;
 }
+
+input[type="checkbox"]:checked {
+    background-color: white;
+    border: 8px solid #FFBD5C;
+}
+input[type="checkbox"]:checked::before {
+    content: "";
+    display: inline-block;
+
+
+
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+
+    background-color: white;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* Styling for radio button labels */
 label {
@@ -178,7 +205,7 @@ input[type="checkbox"] {
     padding: 16px 24px;
 
     color: #023A6B;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -186,6 +213,11 @@ input[type="checkbox"] {
     text-transform: uppercase;
     background: unset;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+.prm-btn:hover {
+    background: #FFBD5C;
 }
 
 .buttons-container {
@@ -200,7 +232,59 @@ input[type="checkbox"] {
     position: absolute;
     right: 40px;
     bottom: 16px;
+    animation: rotate 5600ms ease-out infinite;
 }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+}
+
 .img-container {
     position: relative;
+}
+
+.header-wrapper {
+    max-width: 700px;
+}
+
+.container-padding {
+    margin-bottom: 64px;
+}
+
+.info-button {
+    transition: 0.3s;
+}
+
+.info-button:hover {
+    transform: scale(1.1);
+}
+
+.Shopping-Cart-text:hover {
+    color: #FF7733;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-text {
+    margin-top: 4px;
+    color: #023A6B;
+    font-family: Eczar;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    margin-left: 8px;
+    transition: 0.5s;
+}
+
+.logo-text:hover {
+    color: #FF7733;
 }

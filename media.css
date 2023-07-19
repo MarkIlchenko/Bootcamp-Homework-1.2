@@ -14,11 +14,22 @@
 
 @media only screen and (max-width: 412px) {
     .Logo {
-        width: 154px;
+        /*width: 154px;*/
         height: 34px;
     }
     .Shopping-Cart-text {
         display: none;
+        transition: 0.5s;
+    }
+    .logo-text {
+        color: #023A6B;
+        font-family: Eczar;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        margin-left: 8px;
+        transition: 0.5s;
     }
     .basket-icon {
         width: 40px;
@@ -42,6 +53,9 @@
         font-style: normal;
         font-weight: 700;
         line-height: 130%;
+    }
+    .container-padding {
+        margin-bottom: unset;
     }
     .container {
         padding: 24px;
@@ -72,13 +86,17 @@
     .cart:last-child::after {
         height: 0;
     }
+    .header-wrapper {
+        max-width: unset;
+    }
+
     h2 {
         color: #023A6B;
         font-family: Eczar;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
-        line-height: 120%; /* 28.8px */
+        line-height: 120%;
     }
 }
 
