@@ -37,13 +37,17 @@
             </div>
         </a>
         <div>
-            <a href="#" class="Shopping-Cart-Container">
-                <img src="img/Shopping-Cart.svg" alt="Shopping Cart" class="basket-icon">
+            <a href="shopping-cart.html" class="Shopping-Cart-Container">
+                <div class="basket-img-container">
+                    <img src="img/Shopping-Cart.svg" alt="Shopping Cart" class="basket-icon">
+                    <span class="cart-item-count">0</span>
+                </div>
                 <div class="Shopping-Cart-text">
                     Shopping<br>
                     Cart
                 </div>
             </a>
+
         </div>
     </nav>
 </header>
@@ -51,6 +55,46 @@
 <main>
     <section class="container">
         <h1 class="header-wrapper">We believe a cup of coffee is one of the most important, simple <span class="special-word">pleasures</span> in life</h1>
+
+<!--        <div class="Modal">-->
+<!--            <div class="container-small">-->
+<!--                <h2>Extra Latte</h2>-->
+<!--                <img src="img/Big_Cup.svg" alt="Cup" class="Modal-img modal-commpon-margin">-->
+<!--                <div class="info-wrapper modal-commpon-margin">-->
+<!--                    <ul class="modal-list">-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Calories <span class="modal-price">65</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Total Fat <span class="modal-price">2.4g</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Cholesterol <span class="modal-price">9.6mg</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Sodium <span class="modal-price">55mg</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Sodium <span class="modal-price">6.8g</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Protein <span class="modal-price">4.2g</span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                    <ul class="modal-list">-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Vitamin D <span class="modal-price">1.4mcg</span>-->
+<!--                        </li>-->
+<!--                        <li class="modal-list-item">-->
+<!--                            Calcium <span class="modal-price">158mg</span>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--                <button class="modal-btn modal-commpon-margin">Cool, got it</button>-->
+<!--                <div class="modal-commpon-margin"></div>-->
+<!--            </div>-->
+<!--        </div>-->
+
         <div class="product-list container-padding ">
 
             <article class="cart">
@@ -64,24 +108,24 @@
                 </div>
                 <div class="options-container">
                     <div class="option-container">
-                        <input type="radio" name="Late-ML" id="Late-option1" checked>
+                        <input type="radio" name="Late-ML" id="Late-option1" value="250" checked>
                         <label for="Late-option1">250 ml</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="radio" name="Late-ML" id="Late-option2">
+                        <input type="radio" name="Late-ML" id="Late-option2" value="500">
                         <label for="Late-option2">500 ML</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="checkbox" id="Late-myCheckbox">
-                        <label for="Late-myCheckbox">
+                        <input type="checkbox" id="Late-ML-myCheckbox" name="Sugar">
+                        <label for="Late-ML-myCheckbox">
                             Add sugar
                         </label>
                     </div>
                 </div>
                 <div class="buttons-container">
-                    <button class="prm-btn">Add to Cart</button>
+                    <button class="prm-btn" onclick="addToCart('Extra Latte', 8.99, 'img/Cup.png', getSelectedML('Late-ML'), isSugarAdded('Late-ML'), '$8.99')">Add to Cart</button>
                     <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
@@ -94,24 +138,24 @@
                 </div>
                 <div class="options-container">
                     <div class="option-container">
-                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option1" checked>
+                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option1" value="250" checked>
                         <label for="Cappuccino-option1">250 ml</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option2">
+                        <input type="radio" name="Cappuccino-ML" id="Cappuccino-option2" value="500">
                         <label for="Cappuccino-option2">500 ML</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="checkbox" id="Cappuccino-myCheckbox">
-                        <label for="Cappuccino-myCheckbox">
+                        <input type="checkbox" id="Cappuccino-ML-myCheckbox" name="Sugar">
+                        <label for="Cappuccino-ML-myCheckbox">
                             Add sugar
                         </label>
                     </div>
                 </div>
                 <div class="buttons-container">
-                    <button class="prm-btn">Add to Cart</button>
+                    <button class="prm-btn" onclick="addToCart('Cappuccino', 9.99, 'img/Cup2.svg', getSelectedML('Cappuccino-ML'), isSugarAdded('Cappuccino-ML'), '$9.99')">Add to Cart</button>
                     <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
@@ -124,24 +168,24 @@
                 </div>
                 <div class="options-container">
                     <div class="option-container">
-                        <input type="radio" name="EX-Late-ML" id="EX-Late-option1" checked>
+                        <input type="radio" name="EX-Late-ML" id="EX-Late-option1" value="250" checked>
                         <label for="EX-Late-option1">250 ml</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="radio" name="EX-Late-ML" id="EX-Late-option2">
+                        <input type="radio" name="EX-Late-ML" id="EX-Late-option2" value="500">
                         <label for="EX-Late-option2">500 ML</label>
                     </div>
 
                     <div class="option-container">
-                        <input type="checkbox" id="EX-Late-myCheckbox">
-                        <label for="EX-Late-myCheckbox">
+                        <input type="checkbox" id="EX-Late-ML-myCheckbox" name="Sugar">
+                        <label for="EX-Late-ML-myCheckbox">
                             Add sugar
                         </label>
                     </div>
                 </div>
                 <div class="buttons-container">
-                    <button class="prm-btn">Add to Cart</button>
+                    <button class="prm-btn" onclick="addToCart('Moccachino', 7.29, 'img/Cup3.svg', getSelectedML('EX-Late-ML'), isSugarAdded('EX-Late-ML'), '$7.29')">Add to Cart</button>
                     <img src="img/Info.svg" alt="Info" class="info-button">
                 </div>
             </article>
@@ -151,6 +195,18 @@
     </section>
 </main>
 
+<div class="container unvisible" id="cart">
+    <h1>Shopping Cart</h1>
+    <div class="cart-items" id="cart-items"></div>
+
+    <div>
+        <p class="cart-total" id="cart-total"></p>
+        <p class="items-number-quanity"></p>
+    </div>
+
+    <button class="checkout">Buy</button>
+    <span class="cart-item-count">0</span>
+</div>
 
 <script src="main.js"></script>
 <noscript>Your browser does not support JavaScript!</noscript>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Mark Ilchenko">
+
+  <title>Shopping Cart</title>
+  <!--    Решил еще favicon добавить-->
+  <link rel="icon" type="image/x-icon" href="img/Favicon-Logo.svg">
+  <!--    Добовляю шрифт в проект, беру их из Google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@700&family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <!--    Подключаю свой файл со стилями-->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+<header class="nav-container">
+  <nav class="nav-bar-container">
+
+    <a href="index.html" class="logo-container">
+      <!--            Немного переработал Лого, чтобы был hover effect как в прототипе-->
+      <!--            <img src="img/Logo.svg" alt="Logo" class="Logo">-->
+      <img src="img/Logo-2.svg" alt="Logo" class="Logo">
+      <div class="logo-text">
+        VELOCE<br>
+        COFFEE SHOP
+      </div>
+    </a>
+    <div>
+      <a href="shopping-cart.html" class="Shopping-Cart-Container">
+        <div class="basket-img-container">
+          <img src="img/Shopping-Cart.svg" alt="Shopping Cart" class="basket-icon">
+          <span class="cart-item-count">0</span>
+        </div>
+        <div class="Shopping-Cart-text">
+          Shopping<br>
+          Cart
+        </div>
+      </a>
+
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="container ">
+    <h1>Shopping Cart</h1>
+    <div class="cart-container" id="cart">
+      <div class="cart-items" id="cart-items"></div>
+
+      <div class="checkout-container">
+        <h3 class="checkout">Checkout</h3>
+
+        <ul class="cart-price-container">
+          <li><p class="items-number-quanity"></p></li>
+          <li class="cart-list">
+            <p class="cart-item-name">Delivery</p>
+            <span class="cart-item-cost">$5</span>
+          </li>
+        </ul>
+        <div class="list-shape"></div>
+        <p class="cart-total" id="cart-total"></p>
+        <button class="checkoutBtn">Buy</button>
+
+      </div>
+
+
+    </div>
+  </section>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
