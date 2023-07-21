@@ -4,12 +4,7 @@
     box-sizing: border-box;
 
     color: #023A6B;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-
+    font: 700 14px/120% "Open Sans", sans-serif;
 }
 
 li {
@@ -38,31 +33,19 @@ li {
     width: 100%;
 
     color: #023A6B;
+    font: 700 14px/16px "Open Sans", sans-serif;
     text-align: center;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 114.286% */
     text-transform: uppercase;
 }
 
 .cart-item-name {
     color: #023A6B;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 16.8px */
+    font: 700 14px/120% "Open Sans", sans-serif;
 }
 
 .cart-item-cost {
     color: #F73;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 16.8px */
+    font: 700 14px/120% "Open Sans", sans-serif;
 }
 
 body {
@@ -71,12 +54,8 @@ body {
 
 .checkout {
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
+    font: 700 24px/120% Eczar, sans-serif;
     margin-bottom: 16px;
-    line-height: 120%; /* 28.8px */
 }
 
 .Shopping-Cart-Container {
@@ -87,11 +66,7 @@ body {
 
 .Shopping-Cart-text {
     color: #023A6B;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 100%; /* 16px */
+    font: 700 16px/1 "Open Sans", sans-serif;
     text-transform: uppercase;
     transition: 0.5s;
     margin-left: 16px;
@@ -130,29 +105,17 @@ a {
 
 h1 {
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    font: 700 48px/120% Eczar, sans-serif;
 }
 
 h2 {
+    font: 700 32px/120% Eczar;
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 38.4px */
 }
 
 .special-word {
+    font: 700 48px/120% Eczar;
     color: #F73;
-    font-family: Eczar;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
 }
 
 .product-list {
@@ -163,13 +126,8 @@ h2 {
 }
 
 .price {
+    font: 700 16px/120% Eczar;
     color: #FFF;
-    font-family: Eczar;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
-
     padding: 2px 6px;
     border-radius: 16px;
     background: #F73;
@@ -195,7 +153,6 @@ input[type="radio"], input[type="checkbox"] {
     outline: none;
     cursor: pointer;
     margin-right: 12px;
-
 }
 
 input[type="radio"]:checked {
@@ -207,11 +164,10 @@ input[type="checkbox"]:checked {
     background-color: white;
     border: 8px solid #FFBD5C;
 }
+
 input[type="checkbox"]:checked::before {
     content: "";
     display: inline-block;
-
-
 
     width: 12px;
     height: 12px;
@@ -219,14 +175,11 @@ input[type="checkbox"]:checked::before {
 
     background-color: white;
 
-
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 /* Styling for radio button labels */
 label {
@@ -243,7 +196,6 @@ label {
     max-width: 280px;
     /*justify-content: space-between;*/
     flex-wrap: wrap;
-
     margin: 16px 0;
 }
 
@@ -270,11 +222,7 @@ input[type="checkbox"] {
     padding: 16px 24px;
 
     color: #023A6B;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px; /* 114.286% */
+    font: 700 14px/114.286% "Open Sans", sans-serif;
     text-transform: uppercase;
     background: unset;
     cursor: pointer;
@@ -341,11 +289,7 @@ input[type="checkbox"] {
 .logo-text {
     margin-top: 4px;
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    font: 700 24px/120% Eczar;
     margin-left: 8px;
     transition: 0.5s;
 }
@@ -369,6 +313,10 @@ input[type="checkbox"] {
     max-width: 400px;
     background: white;
 
+}
+
+.Modal::-webkit-scrollbar {
+    width: 0;
 }
 
 .container-small {
@@ -400,11 +348,7 @@ input[type="checkbox"] {
     margin-top: 16px;
 
     color: #023A6B;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    font: 700 14px/120% "Open Sans";
 }
 
 .modal-list {
@@ -421,11 +365,7 @@ input[type="checkbox"] {
 
 .modal-price {
     color: #F73;
-    font-family: Open Sans;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%; /* 16.8px */
+    font: 700 14px/120% "Open Sans";
 }
 
 .modal-btn {
@@ -434,33 +374,35 @@ input[type="checkbox"] {
     justify-content: center;
 }
 
-
 .coffee {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
+
 .coffee img {
     width: 100px;
     height: 100px;
     margin-right: 10px;
 }
+
 .coffee-info {
     display: flex;
     flex-direction: column;
 }
+
 .coffee-price {
     font-weight: bold;
 }
+
 .cart {
     margin-top: 20px;
 }
-.cart-item {
 
+.cart-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .cart-item-container {
@@ -479,27 +421,23 @@ input[type="checkbox"] {
 
 .cart-name {
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
+    font: 700 24px/1.2 Eczar;
     margin-right: 8px;
-    line-height: 120%; /* 28.8px */
 }
 
 .cart-item input {
     width: 30px;
     text-align: center;
 }
+
 .cart-total {
     margin-top: 10px;
     font-weight: bold;
 }
+
 .checkout {
     margin-top: 10px;
 }
-
-/* main.css */
 
 .quantity-wrapper {
     display: flex;
@@ -523,24 +461,15 @@ input[type="number"] {
     font-size: 16px;
 }
 
-
 .h3 {
     color: #023A6B;
-    font-family: Eczar;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 120%;
+    font: 700 24px/120% Eczar;
 }
 
 .cart-item-count {
     color: #FFF;
     text-align: center;
-    font-family: Eczar;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 100%; /* 20px */
+    font: 900 20px/20px Eczar;
     text-transform: uppercase;
     position: absolute;
     top: 60%;
@@ -565,7 +494,6 @@ input[type="number"] {
 .cart-item-option-container {
     display: flex;
     width: 60px;
-    /*align-items: center;*/
 }
 
 .cart-item-option-container img {
@@ -586,7 +514,6 @@ input[type="number"] {
     height: fit-content;
     justify-content: space-between;
     align-items: center;
-
 
     border-radius: 50px;
     border: 2px solid  #FFBD5C;
@@ -629,4 +556,30 @@ input[type="number"] {
     border-radius: 16px;
     background: #FFF;
     height: fit-content;
+}
+
+.modal-name-price {
+    display: flex;
+    align-items: center;
+}
+
+.modal-price-item {
+    color: #FFF;
+    font: 700 24px/120% Eczar;
+    padding: 2px 6px 0;
+    border-radius: 50px;
+    background: #F73;
+    margin-left: 8px;
+}
+
+.modal-btn {
+    color: #023A6B;
+    text-align: center;
+    font: 700 14px/16px "Open Sans";
+    text-transform: uppercase;
+    border-radius: 64px;
+    border: 2px solid #F73;
+    padding: 16px 0;
+    background: unset;
+    cursor: pointer;
 }

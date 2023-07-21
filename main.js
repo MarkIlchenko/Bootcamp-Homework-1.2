@@ -241,3 +241,21 @@ updateCart();
 // cartItemDiv.appendChild(removeButton);
 //
 // cartItemsDiv.appendChild(cartItemDiv);
+
+let modalOpenButtons = document.querySelectorAll('.info-button');
+let modalCloseButtons = document.querySelectorAll('.modal-btn');
+
+modalOpenButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        let modalId = button.getAttribute('data-modal');
+        let modal = document.getElementById(modalId);
+        modal.classList.remove('unvisible');
+    });
+});
+
+modalCloseButtons.forEach(function (button) {
+    button.addEventListener('click', function () {
+        let modal = button.closest('.Modal');
+        modal.classList.add('unvisible');
+    });
+});
